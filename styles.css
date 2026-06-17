@@ -15,9 +15,10 @@
     --color-accent-strong: #823d27;   /* terrakotta-mørk - hover */
     --color-secondary: #4a5a3a;       /* dyp oliven - sekundær aksent */
     --color-warm: #c89a6a;            /* varm sand */
+    --color-gold: #b8945a;            /* gull fra logo */
 
     --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    --font-display: 'Playfair Display', Georgia, serif;
+    --font-display: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
 
     --radius: 8px;
     --radius-lg: 16px;
@@ -149,28 +150,20 @@ h3 { font-size: 1.25rem; }
 .logo {
     display: flex;
     align-items: center;
-    gap: 0.65rem;
+    gap: 0.7rem;
     color: var(--color-ink);
 }
 .logo:hover { color: var(--color-ink); }
-.logo-mark {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 38px;
-    height: 38px;
-    background: var(--color-accent);
-    color: white;
-    border-radius: 8px;
-    font-weight: 700;
-    font-size: 0.95rem;
-    letter-spacing: -0.02em;
-    font-family: var(--font-sans);
+.logo-image {
+    height: 40px;
+    width: auto;
+    display: block;
 }
 .logo-text {
     font-family: var(--font-display);
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 1.15rem;
+    letter-spacing: 0.01em;
 }
 .logo-as { color: var(--color-muted); font-weight: 400; }
 
@@ -415,6 +408,7 @@ h3 { font-size: 1.25rem; }
     .main-nav { display: none; }
     .header-cta { padding: 0.55rem 1rem; }
     .logo-text { font-size: 1rem; }
+    .logo-image { height: 32px; }
 }
 
 @media (max-width: 480px) {
