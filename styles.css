@@ -37,7 +37,8 @@
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; scroll-padding-top: 70px; }
+section[id] { scroll-margin-top: 70px; }
 
 body {
     font-family: var(--font-sans);
@@ -67,9 +68,9 @@ h1, h2, h3 {
     font-weight: 600;
 }
 
-h1 { font-size: clamp(2rem, 5vw, 3.5rem); letter-spacing: -0.02em; }
-h2 { font-size: clamp(1.6rem, 3.5vw, 2.4rem); letter-spacing: -0.01em; }
-h3 { font-size: 1.25rem; }
+h1 { font-size: clamp(1.85rem, 4.5vw, 2.5rem); letter-spacing: -0.02em; }
+h2 { font-size: clamp(1.55rem, 3.4vw, 2.15rem); letter-spacing: -0.01em; }
+h3 { font-size: 1.2rem; }
 
 .eyebrow {
     text-transform: uppercase;
@@ -81,7 +82,7 @@ h3 { font-size: 1.25rem; }
 }
 
 .lede {
-    font-size: 1.15rem;
+    font-size: 1.05rem;
     color: var(--color-ink-soft);
     margin-bottom: var(--space-3);
 }
@@ -91,7 +92,7 @@ h3 { font-size: 1.25rem; }
 .section-header {
     text-align: center;
     max-width: 700px;
-    margin: 0 auto var(--space-5);
+    margin: 0 auto var(--space-4);
 }
 .section-header p {
     color: var(--color-ink-soft);
@@ -144,7 +145,7 @@ h3 { font-size: 1.25rem; }
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: var(--space-2) var(--space-3);
+    padding: var(--space-1) var(--space-3);
     gap: var(--space-3);
 }
 .logo {
@@ -155,7 +156,7 @@ h3 { font-size: 1.25rem; }
 }
 .logo:hover { color: var(--color-ink); }
 .logo-image {
-    height: 40px;
+    height: 32px;
     width: auto;
     display: block;
 }
@@ -183,7 +184,7 @@ h3 { font-size: 1.25rem; }
 
 /* ===== HERO ===== */
 .hero {
-    padding: var(--space-6) 0;
+    padding: var(--space-5) 0;
     background: linear-gradient(180deg, var(--color-accent-soft) 0%, var(--color-bg) 100%);
 }
 .hero-inner {
@@ -214,7 +215,7 @@ h3 { font-size: 1.25rem; }
 
 /* ===== TJENESTER ===== */
 .services {
-    padding: var(--space-6) 0;
+    padding: var(--space-5) 0;
 }
 .service-grid {
     display: grid;
@@ -275,7 +276,7 @@ h3 { font-size: 1.25rem; }
 
 /* ===== OM OSS ===== */
 .about {
-    padding: var(--space-6) 0;
+    padding: var(--space-5) 0;
     background: var(--color-surface);
 }
 .about-inner {
@@ -308,7 +309,7 @@ h3 { font-size: 1.25rem; }
 
 /* ===== KONTAKT ===== */
 .contact {
-    padding: var(--space-6) 0;
+    padding: var(--space-5) 0;
 }
 .contact-grid {
     display: grid;
@@ -403,12 +404,19 @@ h3 { font-size: 1.25rem; }
     .contact-grid {
         grid-template-columns: 1fr;
     }
-    .hero { padding: var(--space-5) 0; }
-    .services, .about, .contact { padding: var(--space-5) 0; }
     .main-nav { display: none; }
     .header-cta { padding: 0.55rem 1rem; }
     .logo-text { font-size: 1rem; }
     .logo-image { height: 32px; }
+}
+
+@media (max-width: 600px) {
+    .hero,
+    .services,
+    .about,
+    .contact {
+        padding: var(--space-4) 0;
+    }
 }
 
 @media (max-width: 480px) {
