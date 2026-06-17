@@ -152,22 +152,25 @@ p { word-wrap: break-word; overflow-wrap: break-word; }
 }
 .logo {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 0.7rem;
+    gap: 0.25rem;
     color: var(--color-ink);
 }
 .logo:hover { color: var(--color-ink); }
 .logo-image {
-    height: 32px;
+    height: 36px;
     width: auto;
     display: block;
 }
 .logo-text {
     font-family: var(--font-display);
     font-weight: 600;
-    font-size: 1.15rem;
-    letter-spacing: 0.01em;
+    font-size: 0.95rem;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
+    line-height: 1.1;
+    white-space: nowrap;
 }
 .logo-as { color: var(--color-muted); font-weight: 400; }
 
@@ -420,7 +423,8 @@ p { word-wrap: break-word; overflow-wrap: break-word; }
     .contact {
         padding: var(--space-4) 0;
     }
-    .logo-text { font-size: 0.85rem; letter-spacing: 0.02em; }
+    .logo-text { font-size: 0.75rem; letter-spacing: 0.06em; }
+    .logo-image { height: 28px; }
     .header-inner { gap: var(--space-2); }
     .header-cta { padding: 0.35rem 0.7rem; font-size: 0.78rem; }
 }
