@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="utf-8">
+  <title>Font-sammenligning for Rent og Ryddig</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Kandidater hentet fra kjente klassiske serif-fonter. Rekkefølgen er
+       omtrent: mest lik logo-tekst først. Jeg gjør ikke et endelig valg
+       selv. -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=EB+Garamond:wght@400;500&family=Lora:wght@400;500;600&family=Cardo:wght@400;700&family=Playfair+Display:wght@400;500;600&family=Cinzel:wght@400;500;600&family=Cormorant:wght@400;500;600&family=Libre+Bodoni:wght@400;500;600&family=Spectral:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: -apple-system, system-ui, sans-serif;
+      background: #f6f3ee;
+      color: #2a2018;
+      margin: 0;
+      padding: 32px;
+    }
+    h1 { font-family: serif; font-weight: 500; font-size: 28px; margin: 0 0 8px; }
+    p.lede { color: #6a5e4f; margin: 0 0 32px; max-width: 720px; }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 24px;
+      max-width: 1400px;
+    }
+    .cell {
+      background: white;
+      border: 1px solid #ddd2c2;
+      border-radius: 8px;
+      padding: 24px;
+      text-align: center;
+    }
+    .cell .label {
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #8a7a66;
+      margin-bottom: 16px;
+    }
+    .cell .name {
+      font-size: 22px;
+      letter-spacing: 0.12em;
+      color: #1a1410;
+    }
+    .ref {
+      background: #1a1410;
+      color: white;
+      grid-column: 1 / -1;
+      padding: 32px;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .ref img {
+      max-width: 360px;
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto 16px;
+    }
+    .ref .label {
+      color: #c9a567;
+    }
+    .ref .name {
+      color: white;
+    }
+    .f-cormorant-garamond  { font-family: 'Cormorant Garamond', serif; }
+    .f-eb-garamond         { font-family: 'EB Garamond', serif; }
+    .f-lora                { font-family: 'Lora', serif; }
+    .f-cardo               { font-family: 'Cardo', serif; }
+    .f-playfair            { font-family: 'Playfair Display', serif; }
+    .f-cinzel              { font-family: 'Cinzel', serif; }
+    .f-cormorant           { font-family: 'Cormorant', serif; }
+    .f-libre-bodoni        { font-family: 'Libre Bodoni', serif; }
+    .f-spectral            { font-family: 'Spectral', serif; }
+    .footnote { margin-top: 32px; color: #6a5e4f; font-size: 14px; max-width: 720px; }
+  </style>
+</head>
+<body>
+  <h1>Font-sammenligning</h1>
+  <p class="lede">Logoen din er vist øverst som referanse. Under ser du «RENT OG RYDDIG» i ni forskjellige serif-fonter, i samme størrelse. Den som ligner mest på logo-teksten er den vi bør bruke på nettsiden også.</p>
+
+  <div class="grid">
+    <div class="ref">
+      <div class="label">Referanse — logo fra IMG_1097.jpeg</div>
+      <img src="images/logo-master.jpeg" alt="Rent og Ryddig logo">
+      <div class="name">RENT OG RYDDIG</div>
+    </div>
+
+    <div class="cell">
+      <div class="label">1. Cormorant Garamond</div>
+      <div class="name f-cormorant-garamond">RENT OG RYDDIG</div>
+    </div>
+
+    <div class="cell">
+      <div class="label">2. EB Garamond</div>
+      <div class="name f-eb-garamond">RENT OG RYDDIG</div>
+    </div>
+
+    <div class="cell">
+      <div class="label">3. Lora</div>
+      <div class="name f-lora">RENT OG RYDDIG</div>
+    </div>
+
+    <div class="cell">
+      <div class="label">4. Cardo</div>
+      <div class="name f-cardo">RENT OG RYDDIG</div>
+    </div>
+
+    <div class="cell">
+      <div class="label">5. Playfair Display</div>
+      <div class="name f-playfair">RENT OG RYDDIG</div>
+    </div>
+
+    <div class="cell">
+      <div class="label">6. Cinzel</div>
+      <div class="name f-cinzel">RENT OG RYDDIG</div>
+    </div>
+
+    <div class="cell">
+      <div class="label">7. Cormorant</div>
+      <div class="name f-cormorant">RENT OG RYDDIG</div>
+    </div>
+
+    <div class="cell">
+      <div class="label">8. Libre Bodoni</div>
+      <div class="name f-libre-bodoni">RENT OG RYDDIG</div>
+    </div>
+
+    <div class="cell">
+      <div class="label">9. Spectral</div>
+      <div class="name f-spectral">RENT OG RYDDIG</div>
+    </div>
+  </div>
+
+  <p class="footnote">Åpne denne i nettleseren: <code>http://localhost:8765/_preview-font.html</code>. Si hvilket nummer (1–9) som ligner mest, eller send et bilde av favoritten — så bytter jeg den inn på hele siden.</p>
+</body>
+</html>

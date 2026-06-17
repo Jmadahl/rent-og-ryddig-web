@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 130" role="img" aria-label="Rent og Ryddig">
+  <!--
+    RR-logo for Rent og Ryddig AS.
+
+    Bruker Cormorant Garamond (Google Font, klassisk serif med høy kontrast)
+    for R-formene. For å få "delt rygg"-effekten overlapper de to R-ene
+    vertikalt på midten, og en ekstra midtstolpe tegnes oppå for å skjule
+    sømmen.
+  -->
+  <defs>
+    <style>
+      @font-face {
+        font-family: 'Cormorant Garamond';
+        font-style: normal;
+        font-weight: 700;
+        src: url('fonts/cormorant-garamond-700-latin.woff2') format('woff2');
+      }
+      .rr-letter {
+        font-family: 'Cormorant Garamond', 'Times New Roman', serif;
+        font-weight: 700;
+        font-size: 95px;
+        fill: none;
+        stroke: #9A7B2E;
+        stroke-width: 1.4;
+        stroke-linejoin: round;
+        stroke-linecap: round;
+      }
+    </style>
+  </defs>
+
+  <!-- Venstre R: anchor=end så høyre kant treffer x=135, men vi flytter til x=120 -->
+  <text x="120" y="92" text-anchor="end" class="rr-letter">R</text>
+  <!-- Høyre R: anchor=start så venstre kant starter på x=120 -->
+  <text x="120" y="92" text-anchor="start" class="rr-letter">R</text>
+
+  <!-- Midtstolpe som dekker sømmen mellom de to R-ene -->
+  <line x1="120" y1="20" x2="120" y2="110"
+        stroke="#9A7B2E" stroke-width="2.6" stroke-linecap="round" />
+</svg>
